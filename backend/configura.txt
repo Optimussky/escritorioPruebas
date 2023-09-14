@@ -1,0 +1,12 @@
+# configura.txt
+
+"" Instalar dependencias:
+	uvicorn
+	pymysql
+	sqlalchemy
+
+## Lenvantar servidor uvicorn: URL=https://fastapi.tiangolo.com/deployment/manually/
+	 uvicorn main:app --host 0.0.0.0 --port 8900 --reload
+
+## Crear el archivo database.py en el que van a estar todas las configuraciones
+para conectarse a la base de datos.
