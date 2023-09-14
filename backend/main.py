@@ -32,5 +32,6 @@ def get_users(db: Session = Depends(get_db)):
     return crud.get_users(db=db)
 """
 Levantar el servidor desde terminal:
+    ## --reload es una especie de nodemon para que se haga un hotreload
      uvicorn main:app --host 0.0.0.0 --port 8900 --reload
 """
