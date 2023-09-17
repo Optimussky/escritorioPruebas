@@ -10,3 +10,10 @@
 
 ## Crear el archivo database.py en el que van a estar todas las configuraciones
 para conectarse a la base de datos.
+
+## Acceder a mi API usando CURL
+curl -X 'GET' \
+  'http://localhost:8900/api/users/' \
+  -H 'accept: application/json'
+
+curl -X 'GET' 'http://localhost:8900/api/users/' -H 'accept: application/json'

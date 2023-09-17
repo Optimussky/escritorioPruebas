@@ -30,6 +30,11 @@ def index():
 @app.get('/api/users/', response_model=list[UserId])
 def get_users(db: Session = Depends(get_db)):
     return crud.get_users(db=db)
+
+@app.get('/api/users/{id:int}')
+def get_user(id, db: Session = Depends(get_db)):
+    return crud.get_user_by_id(db=db, id=id)
+
 """
 Levantar el servidor desde terminal:
     ## --reload es una especie de nodemon para que se haga un hotreload
